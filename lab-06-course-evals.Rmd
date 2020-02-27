@@ -1,0 +1,38 @@
+---
+title: "Lab 06 - Modeling Course Evaluations"
+subtitle: "Due: Thursday, Mar 05 at 11:59pm"
+author: "Lab Group - Member 1, Member 2, Member 3, Member 4"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, 
+                      message = FALSE, warning = FALSE,
+                      fig.height=6, fig.width = 9, fig.align = "center")
+```
+
+## Packages
+
+```{r packages}
+library(tidyverse)
+library(broom)
+```
+
+## Data
+
+```{r load_data}
+evals <- read_csv("data/evals-mod.csv")
+```
+
+## Exercises
+
+#### Exercise 1
+
+```{r exercise_1}
+___ <- evals %>%
+  rowwise() %>%
+  ___(bty_avg = mean( c( ___ ) )) %>%
+  ungroup()
+```
